@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/tv"
+        android:gravity="center"
+        android:layout_weight="0.8"
+        android:background="@color/grey"
+        android:text="0"
+        android:textSize="150sp"
+        android:textColor="#fff"
+        />
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_margin="10sp"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn1"
+            android:onClick="black"
+            android:text="Black"
+            android:textColor="#fff"
+            android:background="@color/black"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn2"
+            android:onClick="red"
+            android:text="Red"
+            android:textColor="#fff"
+            android:background="@color/red"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn3"
+            android:onClick="blue"
+            android:text="Blue"
+            android:textColor="#fff"
+            android:background="@color/blue"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn4"
+            android:onClick="green"
+            android:text="Green"
+            android:textColor="#fff"
+            android:background="@color/green"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="85sp"
+            android:background="#fff"
+            android:onClick="count"
+            android:text="Count" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:background="#fff"
+            android:onClick="reset"
+            android:text="Reset" />
+    </LinearLayout>
+
+
+</LinearLayout>
